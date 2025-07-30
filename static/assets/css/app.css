@@ -2482,7 +2482,7 @@ body.has-sticky-header {
 }
 
 .hero-banner {
-  background: url("../media/web_imgs/Landscaping Pics/Seeta Uni Pic/IMG-20250101-WA0080.jpg") no-repeat;
+  background: url("../media/agency_imgs/Landscaping Pics/IMG-20250101-WA0080.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   height: clamp(750px, 50vw, 1650px);
@@ -3402,7 +3402,7 @@ body.has-sticky-header {
 }
 
 .solution-sec {
-  background: url("/static/assets/media/web_imgs/Landscaping Pics/2008-04_229.jpg") no-repeat;
+  background: url("/static/assets/media/2008-04_229.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
