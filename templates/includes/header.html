@@ -1,0 +1,87 @@
+{% load static %}
+
+<!-- HEADER MENU START -->
+<header class="header" id="header">
+  <div class="container-fluid">
+    <nav class="navigation">
+      <div class="row align-items-center">
+        <div class="col-xl-2 col-lg-2 col-sm-3 col-4">
+          <a href="/" class="d-flex align-items-center"><img src="{% static 'assets/media/logo.png' %}" alt="/logo" class="header-logo" style="width: 150px !important;" /></a>
+        </div>
+        <div class="col-xl-6 col-lg-4 col-sm-2 col-1">
+          <div class="menu-button-right">
+            <div class="main-menu__nav">
+              <ul class="main-menu__list">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'about' %}">About Us</a>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0);">Services</a>
+                  <ul style="width: 250px !important">
+                    <li>
+                      <a href="{% url 'services' %}">Landscape Design</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'services' %}">Landscape Lighting</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'services' %}">Stonework & Hardscape</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'services' %}">Land Surveys</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'services' %}">Property Valuations</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0);">Projects</a>
+                  <ul>
+                    <li>
+                      <a href="{% url 'projects' %}">Projects List</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'projects' %}">Project Detail</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a href="{% url 'blog' %}">Blog</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-sm-7 col-7">
+          <div class="main-menu__right">
+            <div class="search-heart-icon d-sm-flex d-none align-items-center gap-16">
+              <a href="{% url 'contact' %}" class="cus-btn-2">
+                <span>
+                  Get Quote
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path d="M5.97263 17.1137L14.8298 8.25651L14.8298 14.7226C14.8297 15.4894 15.4514 16.1111 16.2183 16.1111C16.6016 16.111 16.9488 15.9556 17.2001 15.7044C17.4514 15.4531 17.6068 15.1059 17.6067 14.7225L17.6067 4.9044C17.6068 4.13761 16.9851 3.51592 16.2182 3.51592L6.40007 3.51592C5.63334 3.51592 5.01165 4.13761 5.01159 4.9044C5.01152 5.6712 5.63321 6.29288 6.40007 6.29288L12.8662 6.29288L3.95455 15.2045C3.41233 15.7467 3.41244 16.5714 3.95466 17.1136C4.49688 17.6559 5.4304 17.6559 5.97263 17.1137Z" fill="currentColor" />
+                  </svg>
+                </span>
+              </a>
+              <a href="{% url 'contact' %}" class="cus-btn">
+                <span>
+                  Contact Us
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path d="M5.97263 17.1137L14.8298 8.25651L14.8298 14.7226C14.8297 15.4894 15.4514 16.1111 16.2183 16.1111C16.6016 16.111 16.9488 15.9556 17.2001 15.7044C17.4514 15.4531 17.6068 15.1059 17.6067 14.7225L17.6067 4.9044C17.6068 4.13761 16.9851 3.51592 16.2182 3.51592L6.40007 3.51592C5.63334 3.51592 5.01165 4.13761 5.01159 4.9044C5.01152 5.6712 5.63321 6.29288 6.40007 6.29288L12.8662 6.29288L3.95455 15.2045C3.41233 15.7467 3.41244 16.5714 3.95466 17.1136C4.49688 17.6559 5.4304 17.6559 5.97263 17.1137Z" fill="currentColor" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <a href="#" class="d-xl-none d-flex main-menu__toggler mobile-nav__toggler"><img src="{% static 'assets/media/icons/menu-icon.png' %}" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- HEADER MENU END -->
+

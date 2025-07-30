@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from uiparadox.co.uk/templates/lumex/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 03:26:53 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="LumeX || Solar Energy HTML Template" />
+
+    <title>
+      Regency Consults | {% block title %}
+
+      {% endblock %}
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/media/favicon.png' %}" />
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/font-awesome.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/slick-theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/wow.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/app.css' %}" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loading loading07">
+        <span data-text="R">R</span>
+        <span data-text="E">E</span>
+        <span data-text="G">G</span>
+        <span data-text="E">E</span>
+        <span data-text="N">N</span>
+        <span data-text="C">C</span>
+        <span data-text="Y">Y</span>
+      </div>
+    </div>
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+      {% block content %}
+
+      {% endblock %}
+
+      <!-- Back To Top Start -->
+      <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+      <style>
+        .whatsapp-btn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #25D366;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      </style>
+
+      <a href="https://wa.me/256708871292" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contact Us </span>
+      </a>
+
+      <!-- Mobile Menu Start -->
+      <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+          <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+          <div class="logo-box">
+            <a href="/" aria-label="logo image"><img src="{% static 'assets/media/logo.png' %}" alt="" /></a>
+          </div>
+          <div class="mobile-nav__container"></div>
+          <ul class="mobile-nav__contact list-unstyled">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@regencyconsults.com">info@regencyconsults.com</a>
+            </li>
+            <li>
+              <i class="fa fa-phone-alt"></i>
+              <a href="tel:+256708871292">+256 708 871 292</a>
+            </li>
+          </ul>
+          <div class="mobile-nav__social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script src="{% static 'assets/js/vendor/jquery-3.6.3.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-validator.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/wow.js' %}"></script>
+
+    <script src="{% static 'assets/js/app.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from uiparadox.co.uk/templates/lumex/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 03:27:14 GMT -->
+</html>
